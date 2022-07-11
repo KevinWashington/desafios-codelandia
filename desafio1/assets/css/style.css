@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "lexendDeca";
+    src: url(/assets/fontes/LexendDeca-Regular.ttf);
+}
+
+@font-face {
+    font-family: "inter-regular";
+    src: url(/assets/fontes/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "inter-medium";
+    src: url(/assets/fontes/Inter-Medium.ttf);
+}
+
+html {
+    --primary: #574ae8;
+    --secondary: #3ea1db;
+    --background: #f3f5f5;
+    --white: #fff;
+    --title: #313131;
+    --text: #b6b6b6;
+    --card: #fff;
+    
+    --linear: linear-gradient(90deg, var(--primary), var(--secondary));
+
+    transition: color 1s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-inline: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: var(--white);
+}
+
+input::placeholder{
+    color: var(--white);
+}
+
+body{
+    font-family: "lexendDeca";
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #dbdbdb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+
+
+header{
+    background: var(--linear);
+    height: 200px;
+    padding-block: 48px;
+}
+
+header .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 41px;
+    color: var(--white);
+    font-size: 18px;
+    line-height: 22px;
+}
+
+header .top .right{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header .top .right #toogle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+header .top .right #toogle input{
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+}
+
+header .top .right #toogle label{
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 55px;
+    height: 30px;
+    background: var(--title);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: relative;
+}
+
+#toogle label:after {
+    content: "";
+    background: var(--white);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+}
+
+#toogle input:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+} 
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 12px 9px;
+}
+
+main{
+    padding-block: 50px;
+    background-color: var(--background);
+}
+
+.card{
+    background-color: var(--card);
+    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.3);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    color: var(--text);
+    padding: 16px;
+}
+
+.card-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .date{
+    font-size: 14px;
+    line-height: 17.5px;
+}
+
+.card-top .likeit{
+    cursor: pointer;
+    transition: .2s;
+}
+
+.card-top .likeit:hover{
+    transform: scale(1.2);
+}
+
+.card .card-title{
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--title);
+    margin-block: 27px 9px;
+}
+
+.card .card-content{
+    font-size: 14px;
+}
+
+.clicado{
+    fill:rgba(19, 19, 31, 0.05) !important;
+}
+
+
+html.dark{
+    --primary: #0e0e0e;
+    --secondary: #222;
+    --background: #272727;
+    --white: #858585;
+    --title: #fff;
+    --text: #b6b6b6;
+    --card: #494949;
+}
