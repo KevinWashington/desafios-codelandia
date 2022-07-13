@@ -1,0 +1,270 @@
+/*Fonts*/
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fontes/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url("../fontes/Merriweather-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url("../fontes/Merriweather-Regular.ttf");
+}
+
+/*Variáveis*/
+:root {
+  --bgSite: #d7d4ff;
+  --buttonColor: #6c63ff;
+
+  --white: #ffffff;
+  --white300: #f9f9f9;
+
+  --title: #2b2b2b;
+  --text: #555555;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+
+.container{
+  padding-inline: 100px;
+}
+
+header{
+  background-color: var(--bgSite);
+  height: 560px;
+}
+
+header .container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .left{
+  width: 389px;
+}
+
+header .left h1{
+  font-family: "Merriweather-Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47px;
+  margin-bottom: 17.5px;
+  color: var(--title);
+}
+
+header .left p{
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  margin-bottom: 45px;
+  color: var(--text);
+}
+
+header .left button{
+  width: 155px;
+  height: 50px;
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  border-radius: 5px;
+  background-color: var(--buttonColor);
+  color: var(--white);
+  font-family: "Lato-Regular";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+header .right{
+  width: 500px;
+}
+
+main .container{
+  padding-block: 150px;
+}
+
+main{
+  background-color: var(--white300);
+}
+
+main .cards{
+  max-width: 1530px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+main .cards .card{
+  text-align: left;
+  display: inline-block;
+  width: 340px;
+  background: var(--white);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+main .cards .card .img{
+  width: 100%;
+  height: 222px;
+}
+
+main .cards .card:nth-child(1) .img{ background-color: #FF6363;}
+main .cards .card:nth-child(2) .img{ background-color: #63ECFF;}
+main .cards .card:nth-child(3) .img{ background-color: #F363FF;}
+main .cards .card:nth-child(4) .img{ background-color: #63FF73;}
+main .cards .card:nth-child(5) .img{ background-color: #FFDD63;}
+main .cards .card:nth-child(6) .img{ background-color: #6663FF;}
+
+main .cards .card h3{
+  font-family: "Merriweather-Bold";
+  font-size: 24px;
+  margin: 24px auto 26px 30px;
+  color: var(--title);
+}
+
+main .cards .card p{
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0px 30px 31px 30px;
+  color: var(--text);
+}
+
+footer{
+  background-color: var(--bgSite);
+}
+
+footer .form{
+  text-align: center;
+  max-width: 470px;
+  margin: 0 auto;
+  padding-block: 80px;
+}
+
+footer .form h2{
+  font-family: "Merriweather-Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40.22px;
+  margin-bottom: 60px;
+  color: var(--title);
+}
+
+footer form{
+  display: flex;
+  flex-direction: column;
+}
+
+footer form input{
+  height: 65px;
+  padding: 22px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+footer form textarea{
+  padding: 22px 15px;
+  outline: none;
+  border: none;
+  margin-bottom: 30px;
+}
+
+::placeholder{
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #6e7275bd;
+}
+
+footer form button{
+  height: 50px;
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  border-radius: 5px;
+  background-color: var(--buttonColor);
+  color: var(--white);
+  font-family: "Lato-Regular";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media (max-width: 1280px){
+  main .cards{
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px){
+  .container{
+    padding-inline: 20px;
+  }
+
+  header{
+    height: 800px;
+  }
+
+  header .container{
+    padding-block: 50px;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  header .container .left{
+    width: 100%;
+    max-width: 389px;
+  }
+
+  header .container .right{
+    width: 100%;
+    max-width: 450px;
+  }
+
+  main .container{
+    padding-block: 75px;
+  }
+}
