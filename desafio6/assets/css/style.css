@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 15px 27px;
+}
+
+body {
+    height: 100vh;
+    font-family: 'B612';
+    background-image: url("../image/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: brightness(30%);
+}
+
+.container{
+    margin: auto;
+    max-width: 979px;
+    width: 87%;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h3 {
+    padding-block: 45px 35px;
+    font-size: 20px;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header h1 {
+    font-size: 96px;
+    line-height: 117px;
+}
+
+.main {
+    display: flex;
+    margin-top: 120px;
+}
+
+.main .left img {
+    margin-right: 73px;
+    border-radius: 20px;
+    height: 267px;
+    width: 184px;
+}
+
+.main .right p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.main .right hr {
+    display: none;
+}
+
+.main .right .stats{
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .right .stats .time {
+    display: flex;
+    align-items: center;
+    gap: 14.5px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.main .right .stats .stars {
+    display: flex;
+    gap: 15.67px;
+}
+
+.main .right .stats .stars img {
+    width: 33.33px;
+}
+
+.main .right .stats .launch-time {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.main .buttons {
+    margin-top: 44px;
+}
+
+.main .buttons a:first-child {
+    background: #0072D2;
+    border-radius: 3px;
+    margin-right: 21px;
+}
+
+.main .buttons a:last-child {
+    background: #131318;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .header h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .header h1 {
+        font-size: 64px;
+        line-height: 78px;  
+    }
+
+    .main .left {
+        display: none;
+    }
+
+    .main .right {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 32px 24px;
+        background: #19191F;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .main .right hr {
+        display: block;
+        border-color: rgba(196, 196, 196, 0.08);
+        margin-block: 39px 24px;
+    }
+
+    .main .right .stats {
+        position: absolute;
+        margin: 0 auto;
+        width: 89.48vw;
+        top: -77px;
+    }
+
+    .main .right .stats .time svg {
+        width: 18px;
+    }
+
+    .main .right .stats .time {
+        gap: 9.5px;
+        font-size: 16px;
+        line-height: 19.44px;
+    }
+    
+    .main .right .stats .stars {
+        gap: 7.5px;
+    }
+    
+    .main .right .stats .stars img {
+        width: 20px;
+    }
+    
+    .main .right .stats .launch-time {
+        font-size: 16px;
+        line-height: 19.44px;
+    }
+
+    .main .buttons {
+        margin-top: 0px;
+    }
+
+    .main .right p {
+        font-size: 14px;
+    line-height: 140%;
+    }
+}
+
+@media (max-width: 380px) {
+    .main .buttons {
+        display: flex;
+    }
+
+    a {
+        padding: 15px 0px;
+        text-align: center;
+    }
+    
+    .main .buttons a:first-child {
+        font-size: 14px;
+        line-height: 19px;
+        min-width: 154px;
+        margin-right: 10px;
+        flex: 1;
+    }
+    
+    .main .buttons a:last-child {
+        font-size: 14px;
+        line-height: 19px;
+        flex: 1;
+    }
+}
