@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+:root {
+    --gree-light: #00DF5E;
+    --white: #F9F9F9;
+    --gray: #828282;
+    --gray-200: #333333;
+    --gray-400: #212121;
+    --dark: #171717;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    color: #F9F9F9;
+    font-family: 'DM Sans', sans-serif;
+}
+
+p {
+    color: var(--gray);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.container {
+    padding-inline: 150px;
+}
+
+header .container {
+    padding-block: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    font-size: 18px;
+}
+
+main h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+main .banner {
+    padding-block: 75px 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .banner .left h1{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
+main .banner .left p {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 47px;
+}
+
+main .banner .left .banner--buttons a{
+    padding: 12px 15px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+main .banner .left .banner--buttons a:first-child {
+    color: var(--dark);
+    margin-right: 15px;
+    background-color: var(--gree-light);
+}
+
+main .banner .left .banner--buttons a:last-child {
+    border: 1px solid var(--gray-200);
+}
+
+
+main .about {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 745px;
+    padding-inline: 100px;
+}
+
+main .about p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+main .contact {
+    margin-block: 85px 127px;
+    display: flex;
+    justify-content: center;
+    gap: 121px;
+}
+
+main .contact .info-card {
+    text-align: center;
+}
+
+main .contact .info-card .svg {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-400);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+main .contact .info-card h3 {
+    font-size: 18px;
+    margin-block: 19px 5px;
+}
+
+main .contact .info-card p {
+    font-size: 16px;
+}
+
+main .projects {
+    text-align: center;
+}
+
+main .projects .project--cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .projects .project--card {
+    margin-bottom: 32px;
+    background-color: var(--gray-400);
+    width: 25vw;
+    min-width: 300px;
+    padding: 20px 25px;
+    text-align: left;
+}
+
+main .projects .project--card .project-img {
+    background-color: var(--dark);
+    width: 100%;
+    height: 130px;
+}
+
+main .projects .project--card h3 {
+    margin-block: 23px 6px;
+}
+
+main .services {
+    margin-top: 95px;
+    text-align: center;
+}
+
+main .services .service--cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+main .services .service--card {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--gray-400);
+    height: 200px;
+    border: 1px solid var(--gray-200);
+    border-bottom: 5px solid var(--gree-light);
+}
+
+main .services .service--card p {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+main .skills {
+    margin-block: 127px 187px;
+    text-align: center;
+}
+
+main .skill--cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+main .skill--card {
+    background-color: var(--gray-400);
+    border: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    background-color: var(--gray-400);
+}
+
+footer a {
+    color: var(--gree-light);
+}
+
+footer .container {
+    text-align: center;
+    padding-block: 20px;
+}
